@@ -1,38 +1,559 @@
-.App {
+/* Navbar CSS */
+
+.header-color {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.header-color button {
+  background-color: white;
+  border-radius: 20px;
+  color: #2193b0;
+  font-weight: bold;
+}
+
+/* End of Navbar CSS */
+
+/* Home Page CSS */
+
+.landing-grid {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-grid button {
+  background-color: white;
+  width: 12%;
+  height: 30%;
+  border-radius: 30px;
+  color: #2193b0;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.banner-text {
+  background-color: white;
+  opacity: 0.5;
+  width: 75%;
+  margin-top: 15rem;
+  margin-left: 16rem;
+  padding: 5rem;
+  border-radius: 15px;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: black;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: black;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.welcome-image {
+  width: 50%;
+  margin-top: 13rem;
+  margin-right: 20rem;
+}
+
+/* End of Home Page CSS */
+
+/* About Page CSS */
+
+.about-grid {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-banner {
+  background-color: white;
+  width: 75%;
+  margin-top: 8rem;
+  margin-left: 15rem;
+  padding: 3rem;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-banner h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  border-radius: 20px;
+}
+
+.title {
+  color: grey;
+}
+
+/* End of About Page CSS */
+
+/* Classes Page CSS */
+
+.class-descriptions {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); 
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); 
+  padding: 10px;
+  text-align: center;
+}
+
+.class-descriptions h1 {
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.class-descriptions Button {
+  color: aqua;
+  background-color: white;
+  border-radius: 20px;
+  color: #2193b0;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.class-descriptions .unit {
+  background-color: white;
+  width: 30%;
+  margin-top: 8rem;
+  margin-left: 15rem;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.class-descriptions .unit h3 {
+  font-weight: bold;
+}
+
+.form-class {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); 
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); 
+
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-cbanner {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-weight: bold;
+}
+
+label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+input,
+select {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.confirmBooking {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 34%;
+}
+
+.confirmBooking button {
+  background-color: #2193b0;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
+
+.confirmBooking button:hover {
+  color: #2193b0;
+  background-color: #fff;
+  border: 2px solid #2193b0;
+}
+
+/* End of Classes Page CSS */
+
+/* Booking Page CSS */
+
+.form-container {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-banner {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-weight: bold;
+}
+
+label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+input,
+select {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.firstName {
+  margin-right: 1%;
+}
+
+.lastName {
+  margin-left: 1%;
+}
+
+.mId {
+  margin-right: 1%;
+}
+
+.booking {
+  margin-left: 1%;
+}
+
+.firstName,
+.lastName,
+.email,
+.password,
+.mId,
+.booking,
+.phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.firstName,
+.lastName {
+  width: 49%;
+}
+
+.email,
+.password,
+.phone {
+  width: 100%;
+}
+
+.mId,
+.booking {
+  width: 49%;
+}
+
+.confirmBooking {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmBooking button {
+  background-color: #2193b0;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
+
+.confirmBooking button:hover {
+  color: #2193b0;
+  background-color: #fff;
+  border: 2px solid #2193b0;
+}
+
+/* End of Booking Page CSS */
+
+/* Contact Page CSS */
+.contact-page {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-page h1 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.card-body {
+  border-radius: 15px;
+}
+
+.card-body h3,
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-body button {
+  border-radius: 15px;
+  width: 10%;
+}
+
+.col-md-4 p {
+  color: white;
+}
+
+.map-container-6 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container-6 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 98%;
+  position: absolute;
+  border-radius: 15px;
+}
+
+/* End of Contact Page CSS */
+
+/* Join Page CSS */
+
+.join-page {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.join-banner {
+  background-color: white;
+  width: 65%;
+  margin-top: 7rem;
+  margin-left: 20rem;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.join-banner h1 {
+  font-weight: bold;
+}
+
+.join-banner h4 {
+  font-weight: bold;
+}
+
+/* End of Join Page CSS */
+
+/* Error Page CSS */
+
+.error-page {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.error-page button {
+  color: white;
+  background-color: #2193b0;
+  font-family: "Poppins";
+  font-weight: bold;
+  width: 12%;
+  height: 30%;
+  border-radius: 30px;
 }
